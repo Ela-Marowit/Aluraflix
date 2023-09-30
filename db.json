@@ -1,0 +1,96 @@
+{
+  "Generos": [
+    {
+      "nombreCategoria": "Romance",
+      "descripcion": "AAAAA",
+      "color": "#641616",
+      "id": 1
+    },
+    {
+      "nombreCategoria": "Acción",
+      "descripcion": "hola",
+      "color": "#a75c16",
+      "id": 2
+    },
+    {
+      "nombreCategoria": "Comedia",
+      "descripcion": "hola",
+      "color": "#336c80",
+      "id": 3
+    }
+  ],
+  "videos": [
+    {
+      "titulo": "JJK",
+      "linkVideo": "https://youtube.com/embed/o67sijyvroc",
+      "linkFoto": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/04/jujutsu-kaisen-season-2-key-visual.jpg",
+      "listaCategoria": "Acción",
+      "descripcion": "AAA",
+      "id": 1
+    },
+    {
+      "titulo": "JJK",
+      "linkVideo": "https://youtube.com/embed/o67sijyvroc",
+      "linkFoto": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/04/jujutsu-kaisen-season-2-key-visual.jpg",
+      "listaCategoria": "Acción",
+      "descripcion": "AAA",
+      "id": 2
+    },
+    {
+      "titulo": "JJK",
+      "linkVideo": "https://youtube.com/embed/o67sijyvroc",
+      "linkFoto": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/04/jujutsu-kaisen-season-2-key-visual.jpg",
+      "listaCategoria": "Acción",
+      "descripcion": "AAA",
+      "id": 3
+    },
+    {
+      "titulo": "a",
+      "linkVideo": "https://youtube.com/embed/dQw4w9WgXcQ",
+      "linkFoto": "https://media.socastsrm.com/wordpress/wp-content/blogs.dir/2626/files/2020/07/thumbs-up-yes-approve-1-062118.png",
+      "listaCategoria": "Romance",
+      "descripcion": "AAAa",
+      "id": 4
+    },
+    {
+      "titulo": "a",
+      "linkVideo": "https://youtube.com/embed/dQw4w9WgXcQ",
+      "linkFoto": "https://media.socastsrm.com/wordpress/wp-content/blogs.dir/2626/files/2020/07/thumbs-up-yes-approve-1-062118.png",
+      "listaCategoria": "Romance",
+      "descripcion": "AAAa",
+      "id": 5
+    },
+    {
+      "titulo": "a",
+      "linkVideo": "https://youtube.com/embed/dQw4w9WgXcQ",
+      "linkFoto": "https://media.socastsrm.com/wordpress/wp-content/blogs.dir/2626/files/2020/07/thumbs-up-yes-approve-1-062118.png",
+      "listaCategoria": "Romance",
+      "descripcion": "AAAa",
+      "id": 6
+    },
+    {
+      "titulo": "D-Frag!",
+      "linkVideo": "https://youtube.com/embed/rM1nHCrRNYg",
+      "linkFoto": "https://www3.animeflv.net/uploads/animes/covers/1218.jpg",
+      "listaCategoria": "Comedia",
+      "descripcion": "La historia gira en torno a Kazama Kenji, quien le gusta creer que es un gran delincuente, algo en que los demás parecen estar de acuerdo, cuando en realidad, es una persona de un muy buen corazón. Su vida sería la de un \"delincuente normal\" de no ser porque se encontró con el llamado \"Club de creación de juegos\", que preside una chica llamada Ruka Shibasaki y al que también asisten la presidenta del consejo estudiantil Chitose Karasuyama, Sakura Mizukami de primer año y cuya consejera es la profesora de segundo Minami Osawa, quienes lo obligaran a unirse a un club. A partir de ahí, su vida de estudiante delincuente cambiara a la de un estudiante con eventos aún más escandalosos.",
+      "id": 7
+    },
+    {
+      "titulo": "DKNNJ",
+      "linkVideo": "https://youtube.com/embed/GhW5t97Esmc",
+      "linkFoto": "https://pm1.aminoapps.com/6478/a47875a63c514f9a9a753b0dcecaa98c989dd762_hq.jpg",
+      "listaCategoria": "Comedia",
+      "descripcion": "Heh",
+      "id": 8
+    },
+    {
+      "titulo": "a",
+      "linkVideo": "https://youtube.com/embed/dQw4w9WgXcQ",
+      "linkFoto": "https://media.socastsrm.com/wordpress/wp-content/blogs.dir/2626/files/2020/07/thumbs-up-yes-approve-1-062118.png",
+      "listaCategoria": "Comedia",
+      "descripcion": "a",
+      "id": 9
+    }
+  ]
+}
