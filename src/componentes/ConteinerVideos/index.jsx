@@ -52,12 +52,15 @@ const ConteinerVideo = () => {
             //     }
             //   });
             const nestedArray = [];
+            for (let i =0;i<listaGeneros.length;i++){
+                nestedArray.push([listaGeneros[i],[]]);
+            }
             // Iterating through the JSON data
             for (let i = 0; i < respuestaVideos.length; i++) {
                 const data = respuestaVideos[i];
                 const genero = data.listaCategoria;
                 const nestedItem = [data.id, data.linkFoto, data.titulo];
-            
+                
                 // Find the index of the genero in the nestedArray
                 const generoIndex = nestedArray.findIndex(item => item[0] === genero);
                 if (generoIndex !== -1) {
@@ -69,7 +72,6 @@ const ConteinerVideo = () => {
                 }
             }
             setImagenes(nestedArray);
-            console.log("Imgs: ",imagenes);
             // console.log("Nested list: ",imgs[0][1][0][1])
             // dictVideos = Object.assign({},...respuestaVideos.map((x)=>
             // ({[x.linkVideo]:[x.listaCategoria,x.linkFoto,x.id]})));
@@ -78,7 +80,6 @@ const ConteinerVideo = () => {
             // console.error("Error al obtener las categorías", error);
         }
     };
-    
 
     const contenedor = {
         dots: true,
@@ -87,7 +88,7 @@ const ConteinerVideo = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 5000,
     };
 
     return (<>

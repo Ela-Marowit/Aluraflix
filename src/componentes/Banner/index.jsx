@@ -39,7 +39,7 @@ const Banner = () => {
                     <p className="banner__text">Cada protagonista nos deja una lección a través de su historia y por la narrativa y características de cada personaje nos deja conocer y aprender diversos valores como la solidaridad, el respeto por los mayores, entre otros.</p>
                 </Box1>
                 <Box1>
-                    <iframe className="banner__video" width="430" height="215" src="https://www.youtube.com/embed/-eb9pP0Ttd8?si=Fj_Fstc6_fCGO4ue" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe className="banner__video" width="430" height="215" src="https://www.youtube.com/embed/-eb9pP0Ttd8?si=Fj_Fstc6_fCGO4ue" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </Box1>
             </div>
         </StyledBanner>
