@@ -11,7 +11,8 @@
 }
 .contenido__img{
     position: relative;
-    width: 15vw;
+    max-width: 30%;
+    height: 290px;
     border:4px solid blue; 
     margin: 6vh 6vw;
     
