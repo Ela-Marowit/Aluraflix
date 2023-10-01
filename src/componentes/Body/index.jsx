@@ -10,11 +10,11 @@ const Body = () => {
   return (
     <Router>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/Home' element={<Home/>}/>
-          <Route path='/NuevoVideo' element={<NuevoVideo/>}/>
-          <Route path='/NuevaCategoria' element={<NuevaCategoria/>}/>
-          <Route path='/Contenido/:id' element={<Contenido/>}/>
+          <Route path='/' element={<Home />}/>
+          <Route path='/Home' element={<Home />}/>
+          <Route path='/NuevoVideo' element={<NuevoVideo />}/>
+          <Route path='/NuevaCategoria' element={<NuevaCategoria />}/>
+          <Route path='/Contenido/:id' element={<Contenido />}/>
         </Routes>  
     </Router>
   );

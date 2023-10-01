@@ -1,7 +1,7 @@
 import "../ListaCategorias/listaCategoria.css";
 import { buscar } from "../../api/api";
 import {useState, useEffect } from "react";
-
+import database from "../../DB/db.json"
 
 const ListaCategoria = (props) => {
     const [categorias, setCategorias] = useState([]);
@@ -18,6 +18,8 @@ const ListaCategoria = (props) => {
             // console.log("aqui va la respuesta:",response);
         } catch (error) {
             console.error("Error al obtener las categorías", error);
+            const data = database.Generos;
+            setCategorias(data);
         }
     };
 

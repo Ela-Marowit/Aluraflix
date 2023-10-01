@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import "../ConteinerVideos/conteinerVideos.css";
 import { buscar } from "../../api/api";
 import { Link } from "react-router-dom";
+import database  from "../../DB/db.json";
 
 const Conteiner = styled.div`
   display: flex;
@@ -26,10 +27,18 @@ const ConteinerVideo = () => {
     useEffect(() => {
         buscarTitulos();
     }, []);
-
+    let respuestaGeneros = [];
+    let respuestaVideos = [];
     const buscarTitulos = async () => {
         try {
-            const respuestaGeneros = await buscar("/Generos");
+            respuestaGeneros = await buscar("/Generos");
+            respuestaVideos = await buscar("/videos");
+        } catch (error) {
+            console.log("Error al obtener datos de la API. Trabajando desde DB", error);
+            respuestaGeneros = database.Generos;
+            respuestaVideos = database.videos;
+            // console.error("Error al obtener las categorías", error);
+        }
             const listaGeneros = respuestaGeneros.map(item=>item.nombreCategoria);
             setTitulos(listaGeneros);
             let listaAuxiliar = [];
@@ -39,7 +48,6 @@ const ConteinerVideo = () => {
             setImagenes(listaAuxiliar);
             const listaColores = respuestaGeneros.map(item=>item.color);
             setColor(listaColores);
-            const respuestaVideos = await buscar("/videos");
             // const listaImagen = respuestaVideos.map(item=>item.linkFoto);
             // setImgs(listaImagen);
             // respuestaVideos.forEach((x) => {
@@ -75,10 +83,6 @@ const ConteinerVideo = () => {
             // console.log("Nested list: ",imgs[0][1][0][1])
             // dictVideos = Object.assign({},...respuestaVideos.map((x)=>
             // ({[x.linkVideo]:[x.listaCategoria,x.linkFoto,x.id]})));
-        } catch (error) {
-            console.log("Error al obtener las categorías", error);
-            // console.error("Error al obtener las categorías", error);
-        }
     };
 
     const contenedor = {
