@@ -3,6 +3,8 @@ import styled from "styled-components";
 import "../componentes/Contenido/contenido.css";
 import { useParams } from "react-router-dom";
 import fondo from "../img/fondo.webp";
+import { buscar } from "../api/api";
+import database from "../DB/db.json"
 
 const Conteiner = styled.div`
   display: flex;
@@ -11,6 +13,7 @@ const Conteiner = styled.div`
   background-color: grey;
 `;
 
+let response = {};
 
 const Contenido = () => {
     const {id} = useParams();
@@ -22,20 +25,22 @@ const Contenido = () => {
 
     const buscarDatos = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/videos/`);
+            response = await buscar(`http://localhost:5000/videos/`);
             if (!response.ok) {
                 throw new Error("Network response was not ok");
             }
-            const data = await response.json();
+        } catch (error) {
+            console.error("Error fetching data:", error);
+            response = database.videos;
+        }
+        console.log(response);
+            const data = response;
             const matchingData = data.find(item => item.id === Number(id));
             if (matchingData) {
                 setData(matchingData); // Update the state with the matching data
               } else {
                 console.error(`No data found for ID: ${id}`);
               }
-        } catch (error) {
-            console.error("Error fetching data:", error);
-        }
     };
 
     if (data === null) {
